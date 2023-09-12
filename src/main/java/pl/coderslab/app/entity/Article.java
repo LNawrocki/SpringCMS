@@ -1,5 +1,8 @@
 package pl.coderslab.app.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import net.bytebuddy.asm.Advice;
 import org.springframework.stereotype.Controller;
 
@@ -10,6 +13,9 @@ import java.util.List;
 
 @Controller
 @Entity
+@Getter
+@Setter
+@ToString
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
